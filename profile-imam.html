@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<style>
+/* start css */
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --color-black: #1a1a1a;
+    --color-blue: #037adc;
+    --color-gray: #5c5c5c;
+    --color-lightgray: #f8f8f8;
+}
+
+body { 
+    display: flex;
+    background-color: var(--color-lightgray);
+    font-family: var(--font-family);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Ini container utama yang bikin tampilannya kaya kertas atau medium */
+div.container {
+    max-width: 680px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 4px 0px 12px rgba(0,0,0,0.1);
+    border-radius: 32px;
+    margin: 20px;
+}
+
+/* Ini yang bikin 2 kolom, biodata dan foto */
+div.profile {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ini biar biodata ada di sebelah kiri */
+div.biodata {
+    width: 70%;
+}
+
+/* Ini biar foto ada di kanan */
+.foto {
+    width: 30%;
+    text-align: right;
+}
+
+/* Atur lebar foto biar ukurannya gak kegedean */
+img.foto-profil {
+    width: 120px;
+    border-radius: 16px;
+}
+
+/* Ini override warna hyperlink */
+a {
+    color: var(--color-blue);
+}
+
+/* override margin heading */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+/* override margin paragraf dan unordered list */
+p, ul {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+/* end css */
+</style>
+
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <title>Data Profil - Imam Akhdan</title>
+        <!-- nambahin favicon -->
+        <link rel="icon" href="https://coradesk.site/images/userprofile.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Data Profil</h1>
+            <div class="profile">
+                <div class="biodata">
+                    <h2>Data Pribadi</h2>
+                        <ul>
+                            <li>Nama: Imam Akhdan Abdul Aziiz</li>
+                            <li>NRP: 3126510017</li>
+                            <li>Prodi: D3 PJJ TI</li>
+                            <li>Semester: 1 (Gasal)</li>
+                        </ul>
+                </div>
+                <div class="foto">
+                    <img src="https://coradesk.site/images/profile.jpg" alt="Foto-Profil" class="foto-profil"></img>
+                </div>
+            </div>   
+            <h2>Tentang Saya</h2>
+                <p>Saya adalah lulusan SMA jurusan IPS pada 2023 silam, saya mulai menyadari ketertarikan saya dengan dunia Informasi Teknologi ketika bekerja di perusahaan IT penyedia sistem ERP berbasis SaaS untuk travel umrah dan haji. Sehubungan dengan itu, saya memantapkan diri untuk menjadi mahasiswa PENS dalam upaya mengembangkan pengetahuan saya di dunia Teknik Informatika.</p>
+            <h2>Pendidikan</h2>
+                <h3>SMAS Adi Luhur Jakarta - [2023 - 2026]</h3>
+            <h2>Bidang yang Diminati</h2>
+                <ul>
+                    <li>System Design</li>
+                    <li>IT Infrastructure</li>
+                    <li>System Administration</li>
+                </ul>
+            <h2>Keahlian</h2>
+                <ul>
+                    <li>Google Sheet / Data Management</li>
+                    <li>Technical Support</li>
+                    <li>Linux Server Administration</li>
+                </ul>
+            <h2>Kontak</h2>
+                <p>Github: <a href="https://github.com/coradesk">coradesk</a></p>
+        </div>
+    </body>
+</html>
+
