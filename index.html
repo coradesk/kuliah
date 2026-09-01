@@ -75,6 +75,14 @@ p, ul {
     line-height: 1.5;
     margin-top: 10px;
 }
+
+.highlight {
+    background-color: var(--color-blue);
+    border-radius: 6px;
+    padding: 0px 6px;
+    color: whitesmoke;
+}
+
 /* end css */
 </style>
 
@@ -127,8 +135,19 @@ p, ul {
                 <ul>
                     <li>Github: <a href="https://github.com/coradesk">coradesk</a></li>
                     <li>Student Mail: <a href="mailto:imamakhdan@it.student.pens.ac.id">imamakhdan@it.student.pens.ac.id</a></li>
+                    <li>Web Access: <a href="https://profil.coradesk.site">coradesk.site</a> / <span id="copyUser" class="highlight" style="cursor: pointer;">User</span> / <span id="copyPass" class="highlight" style="cursor: pointer;">Password</span></li>
                 </ul>
         </div>
+            <script>
+                document.getElementById("copyUser").addEventListener("click", function () {
+                    const text = `guest-pens`;
+                    navigator.clipboard.writeText(text);
+                });
+                document.getElementById("copyPass").addEventListener("click", function () {
+                    const text = `admin123`;
+                    navigator.clipboard.writeText(text);
+                });
+            </script>
     </body>
 </html>
 
